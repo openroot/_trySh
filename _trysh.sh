@@ -1,4 +1,4 @@
-echo "_quotesh"
+echo "_trysh"
 echo "+strange easy world"
 echo
 
@@ -18,11 +18,11 @@ echo
 a=0
 while [ $a -lt $loopcount ]
 do
-    a=`expr $a + 1`
+	a=`expr $a + 1`
 
-    echo " ༂࿐~ $quote: heard [ step $a. ]"
+	echo " ༂࿐~ $quote: heard [ step $a. ]"
 
-    sleep $time
+	sleep $time
 done
 
 ## report area
