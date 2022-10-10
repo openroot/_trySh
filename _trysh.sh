@@ -27,13 +27,13 @@ function math () {
 
 # region testing
 
-	# attested start
+	# # attested start
 	# value1=100.12
 	# value2=3
 	# scale=3
 	# total=$(math $(math $value1 '*' $value2 $scale) '/' 20 3)
 	# echo "sample math operation :: ($value1 * $value2) / 20 = $total"
-	# attested end
+	# # attested end
 
 	# echo
 
