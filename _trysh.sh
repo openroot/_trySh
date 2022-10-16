@@ -18,7 +18,7 @@ function math () {
 	local operation=$2
 	local value2=$3
 	local scale=$4
-	local output=$(bc -l <<< "scale=$scale; $value1 $operation $value2")
+	local output=`bc -l <<< "scale=$scale; $value1 $operation $value2"`
 	echo "$output"
 }
 
@@ -51,11 +51,11 @@ echo
 # region execute
 
 a=0
-while [ $a -lt $loopcount ]
+while [[ $a -lt $loopcount ]]
 do
-	a=$(math $a '+' 1 0)
+	a=`math $a '+' 1 0`
 
-	echo " ༂࿐~~$quote+:heard [step $a] [time elapsed $(math $a '*' $time 5) sec(s)] "
+	echo " ༂࿐~~ $quote +:heard [st $a] [ti el `math $a '*' $time 5` sec(s)] "
 
 	sleep $time
 done
@@ -71,8 +71,7 @@ done
 # region exit
 
 echo
-echo ",say enter any string to exit: "
-read dump
+read -rp ",say enter any string to exit: " "dump"
 echo "$dump"
 
 # region end
