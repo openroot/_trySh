@@ -1,5 +1,5 @@
 #!/bin/bash
-# Name: _trysh.sh
+# Name: _trySh.sh
 # Purpose: trying bash script
 # ---------------------------
 
