@@ -5,7 +5,7 @@
 
 # region welcome
 
-echo "_trysh"
+echo "_trySh"
 echo "༂࿐~ +strange easy world"
 echo
 
